@@ -1,0 +1,20 @@
+<div class="flex flex-col space-y-4">
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Torres imperial" [(ngModel)]="proyecto.nombre" class="border-2 border-black rounded-md p-2">
+    <label for="">Ubicacion</label>
+    <input type="text" placeholder="San cristobal" [(ngModel)]="proyecto.ubicacion" class="border-2 border-black rounded-md p-2">
+    <label for="">Fecha de inicio</label>
+    <input type="text" placeholder="12/04/2025" [(ngModel)]="proyecto.fechaInicio" class="border-2 border-black rounded-md p-2">
+    <label for="">Fecha de finalizacion</label>
+    <input type="email" placeholder="12/04/2027" [(ngModel)]="proyecto.fechaFin" class="border-2 border-black rounded-md p-2">
+    <label for="">Presupuesto</label>
+    <input type="number" placeholder="1000" [(ngModel)]="proyecto.presupuesto" class="border-2 border-black rounded-md p-2">
+    <label for="">Estado del proyecto</label>
+    <select class="border-2 border-black"  [(ngModel)]="proyecto.estado" >
+        <option *ngFor="let estado of estados" [value]="estado">{{estado}}</option>
+    </select>
+    <button class="border-2 border-black" (click)="mostrar()">Añadir proyecto</button>
+    <select name="" id="" [(ngModel)]="proyecto.idJefeProyecto">
+        <option value="" *ngFor="let jefe of idJefe">{{jefe}}</option>
+    </select>
+</div>

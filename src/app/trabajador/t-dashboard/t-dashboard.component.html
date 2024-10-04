@@ -1,0 +1,23 @@
+<div class="flex flex-col border-2 border-black p-10 justify-center">
+    <app-t-form [workerE]="editTrabajador" (trabajadorCreado)="agregarTrabajador($event)"></app-t-form>
+    <table class="border-2 border-black text-center">
+        <tr class="border-2 border-black">
+            <th class="border-2 border-black p-2">Nombre</th>
+            <th class="border-2 border-black p-2">Posicion</th>
+            <th class="border-2 border-black p-2">Telefono</th>
+            <th class="border-2 border-black p-2">Correo</th>
+            <th class="border-2 border-black p-2">Salario</th>
+            <th class="border-2 border-black p-2">Años de experiencia</th>
+        </tr>
+        <tr class="border-4 border-black" *ngFor="let worker of workers; let i = index">
+            <td class="border-2 border-black p-2">{{worker.nombre}}</td>
+            <td class="border-2 border-black p-2">{{worker.posicion}}</td>
+            <td class="border-2 border-black p-2">{{worker.telefono}}</td>
+            <td class="border-2 border-black p-2">{{worker.correo}}</td>
+            <td class="border-2 border-black p-2">{{worker.salario}}</td>
+            <td class="border-2 border-black p-2">{{worker.AExp}}</td>
+            <td class="border-2 border-black p-2"><button (click)="editarTrabajador(i)">Editar</button></td>
+            <td class="border-2 border-black p-2"><button (click)="eliminarTrabajador(i)">Eliminar</button></td>
+        </tr>
+    </table>
+</div>

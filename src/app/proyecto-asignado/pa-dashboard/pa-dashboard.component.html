@@ -1,0 +1,21 @@
+<div class="flex flex-col border-2 border-black p-10 justify-center">
+    <app-pa-form (trabajadorAsignado)="asignarTrabajador($event)"></app-pa-form>
+    <table class="border-2 border-black">
+        <tr class="border-2 border-black">
+            <th class="border-2 border-black">Proyecto</th>
+            <th class="border-2 border-black">Trabajador</th>
+            <th class="border-2 border-black">Fecha asignada</th>
+            <th class="border-2 border-black">Horas trabajadas</th>
+            <th class="border-2 border-black">Rol en el proyecto</th>
+    
+        </tr>
+        <tr class="border-4 border-black" *ngFor="let pa of proyectAws">
+            <td>{{pa.idProyecto}}</td>
+            <td>{{pa.idTrabajador}}</td>
+            <td>{{pa.fechaAsignada}}</td>
+            <td>{{pa.horastrabajadas}}</td>
+            <td>{{pa.rolProyecto}}</td>
+           
+        </tr>
+    </table>
+</div>

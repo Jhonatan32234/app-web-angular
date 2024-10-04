@@ -16,6 +16,7 @@ import { ProyectoAsignadoModule } from './proyecto-asignado/proyecto-asignado.mo
     BrowserModule,
     TrabajadorModule,
     JefeModule,
+    
     ProyectoModule,
     ProyectoAsignadoModule
 ],

@@ -12,6 +12,7 @@ import { ProyectoAsignadoModule } from './proyecto-asignado/proyecto-asignado.mo
     AppComponent
   ],
   imports: [
+    
     BrowserModule,
     TrabajadorModule,
     JefeModule,

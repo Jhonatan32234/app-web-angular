@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { JefeModule } from "./jefe/jefe.module";
 import { ProyectoModule } from './proyecto/proyecto.module';
 import { ProyectoAsignadoModule } from './proyecto-asignado/proyecto-asignado.module';
-import { AppRoutingModule } from './app.routes';
 
 
 @NgModule({
@@ -14,7 +13,6 @@ import { AppRoutingModule } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     TrabajadorModule,
     JefeModule,
     ProyectoModule,

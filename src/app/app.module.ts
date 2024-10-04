@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app.routes';
     AppComponent
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     TrabajadorModule,

@@ -2,19 +2,19 @@
     <app-pa-form (trabajadorAsignado)="asignarTrabajador($event)"></app-pa-form>
     <table class="border-2 border-black">
         <tr class="border-2 border-black">
-            <th class="border-2 border-black">Proyecto</th>
-            <th class="border-2 border-black">Trabajador</th>
-            <th class="border-2 border-black">Fecha asignada</th>
-            <th class="border-2 border-black">Horas trabajadas</th>
-            <th class="border-2 border-black">Rol en el proyecto</th>
+            <th class="border-2 border-black p-2">Proyecto</th>
+            <th class="border-2 border-black p-2">Trabajador</th>
+            <th class="border-2 border-black p-2">Fecha asignada</th>
+            <th class="border-2 border-black p-2">Horas trabajadas</th>
+            <th class="border-2 border-black p-2">Rol en el proyecto</th>
     
         </tr>
-        <tr class="border-4 border-black" *ngFor="let pa of proyectAws">
-            <td>{{pa.idProyecto}}</td>
-            <td>{{pa.idTrabajador}}</td>
-            <td>{{pa.fechaAsignada}}</td>
-            <td>{{pa.horastrabajadas}}</td>
-            <td>{{pa.rolProyecto}}</td>
+        <tr class="border-2 border-black" *ngFor="let pa of proyectAws">
+            <td class="border-2 border-black p-2">{{pa.idProyecto}}</td>
+            <td class="border-2 border-black p-2">{{pa.idTrabajador}}</td>
+            <td class="border-2 border-black p-2">{{pa.fechaAsignada}}</td>
+            <td class="border-2 border-black p-2">{{pa.horastrabajadas}}</td>
+            <td class="border-2 border-black p-2">{{pa.rolProyecto}}</td>
            
         </tr>
     </table>

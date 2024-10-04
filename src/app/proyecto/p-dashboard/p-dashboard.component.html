@@ -2,22 +2,22 @@
     <app-p-form (proyectoCreado)="agregarProyecto($event)"></app-p-form>
     <table class="border-2 border-black">
         <tr class="border-2 border-black">
-            <th class="border-2 border-black">Nombre</th>
-            <th class="border-2 border-black">Ubicacion</th>
-            <th class="border-2 border-black">Fecha de inicio</th>
-            <th class="border-2 border-black">Fecha de finalizacion</th>
-            <th class="border-2 border-black">Presupuesto</th>
-            <th class="border-2 border-black">Jefe asignado</th>
+            <th class="border-2 border-black p-2">Nombre</th>
+            <th class="border-2 border-black p-2">Ubicacion</th>
+            <th class="border-2 border-black p-2">Fecha de inicio</th>
+            <th class="border-2 border-black p-2">Fecha de finalizacion</th>
+            <th class="border-2 border-black p-2">Presupuesto</th>
+            <th class="border-2 border-black p-2">Jefe asignado</th>
 
         </tr>
-        <tr class="border-4 border-black" *ngFor="let proyect of proyects">
-            <td>{{proyect.nombre}}</td>
-            <td>{{proyect.ubicacion}}</td>
-            <td>{{proyect.fechaInicio}}</td>
-            <td>{{proyect.fechaFin}}</td>
-            <td>{{proyect.presupuesto}}</td>
-            <td>{{proyect.estado}}</td>
-            <td>{{proyect.idJefeProyecto}}</td>
+        <tr class="border-2 border-black" *ngFor="let proyect of proyects">
+            <td class="border-2 border-black p-2">{{proyect.nombre}}</td>
+            <td class="border-2 border-black p-2">{{proyect.ubicacion}}</td>
+            <td class="border-2 border-black p-2">{{proyect.fechaInicio}}</td>
+            <td class="border-2 border-black p-2">{{proyect.fechaFin}}</td>
+            <td class="border-2 border-black p-2">{{proyect.presupuesto}}</td>
+            <td class="border-2 border-black p-2">{{proyect.estado}}</td>
+            <td class="border-2 border-black p-2">{{proyect.idJefeProyecto}}</td>
 
         </tr>
     </table>

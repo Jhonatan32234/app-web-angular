@@ -1,0 +1,21 @@
+<div class="flex flex-col space-y-1 justify-center text-lg">
+    <label for="">Proyecto</label>
+    <select class="border-2 border-gray-500 rounded-md p-2" [(ngModel)]="proyectAs.idproyecto">
+        <option value="" disabled selected>Seleccione el proyecto</option>
+        <option *ngFor="let proyecto of proyectos " [value]="proyecto.idproyecto">{{proyecto.nombreproyecto}}</option>
+    </select>
+    <label for="">Trabajador</label>
+
+    <select class="border-2 border-gray-500 rounded-md p-2" [(ngModel)]="proyectAs.idtrabajador">
+        <option value="" disabled selected>Selecciona un trabajador</option>
+        <option *ngFor="let trabajador of trabajadores" [value]="trabajador.idtrabajador">{{trabajador.nombretrabajador}}</option>
+    </select><br>
+
+    <label for="">Fecha asignada</label>
+    <input type="date" placeholder="12/12/2012" [(ngModel)]="proyectAs.fechaasignacion" class="border-2 border-gray-500 rounded-md p-2">
+    <label for="">Horas trabajadas</label>
+    <input type="number" placeholder="10" [(ngModel)]="proyectAs.horastrabajadas" class="border-2 border-gray-500 rounded-md p-2">
+    <label for="">Rol en el proyecto</label>
+    <input type="text" placeholder="10" [(ngModel)]="proyectAs.rolproyecto" class="border-2 border-gray-500 rounded-md p-2"><br>
+    <button class="border-2 border-gray-500 rounded-md p-2" (click)="mostrar()">{{editando ? "Actualizar proyecto asignado": "Asignar trabjador"}}</button><br>
+</div>

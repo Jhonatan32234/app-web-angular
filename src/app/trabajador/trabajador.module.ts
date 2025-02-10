@@ -1,24 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TDashboardComponent } from './t-dashboard/t-dashboard.component';
-import { TFormComponent } from './t-form/t-form.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { TrabajadorDashboardComponent } from './presentation/trabajadorDashboard/trabajador_dashboard.component';
+import { TrabajadorFormComponent } from './presentation/trabajadorForm/trabajador_form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    TDashboardComponent,
-    TFormComponent
+    TrabajadorDashboardComponent,
+    TrabajadorFormComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     HttpClientModule
   
-  ],exports:[
-    TDashboardComponent
-  ]
+  ],
+  exports:[
+    TrabajadorDashboardComponent
+  ],
+  
 })
 export class TrabajadorModule { }

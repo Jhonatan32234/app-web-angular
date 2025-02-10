@@ -1,15 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
-import { TDashboardComponent } from './trabajador/t-dashboard/t-dashboard.component';
-import { JDashboardComponent } from './jefe/j-dashboard/j-dashboard.component';
-import { PDashboardComponent } from './proyecto/p-dashboard/p-dashboard.component';
-import { PaDashboardComponent } from './proyecto-asignado/pa-dashboard/pa-dashboard.component';
+
+import { TrabajadorDashboardComponent } from './trabajador/presentation/trabajadorDashboard/trabajador_dashboard.component';
 import { NgModule } from '@angular/core';
+import { JefeDashboardComponent } from './jefeproyecto/presentation/jefeDashboard/jefe_dashboard.component';
 
 export const routes: Routes = [
-    {path:'trabajador', component: TDashboardComponent},
-    {path:'jefe', component: JDashboardComponent},
-    {path:'proyecto', component: PDashboardComponent},
-    {path:'proyectoAsignado', component: PaDashboardComponent},
+    {path:'trabajador', component: TrabajadorDashboardComponent},
+    {path:'jefe', component: JefeDashboardComponent},
     {path:'', redirectTo: "/trabajador",pathMatch:'full'},
     {path:'**', redirectTo: '/trabajador'}
 ];

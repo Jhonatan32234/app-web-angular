@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TrabajadorModule } from './trabajador/trabajador.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { JefeModule } from "./jefe/jefe.module";
-import { ProyectoModule } from './proyecto/proyecto.module';
-import { ProyectoAsignadoModule } from './proyecto-asignado/proyecto-asignado.module';
+import { JefeModule } from './jefeproyecto/jefe.module';
 import { AppRoutingModule } from './app.routes';
 
 
@@ -17,9 +15,7 @@ import { AppRoutingModule } from './app.routes';
     BrowserModule,
     AppRoutingModule,
     TrabajadorModule,
-    JefeModule,
-    ProyectoModule,
-    ProyectoAsignadoModule
+    JefeModule
 ],
   providers: [],
   bootstrap: [AppComponent]  

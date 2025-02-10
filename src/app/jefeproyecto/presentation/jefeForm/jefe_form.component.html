@@ -1,0 +1,13 @@
+<div class="flex flex-col space-y-1 justify-center text-lg">
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Alejandro" [(ngModel)]="chief.nombrejefe" class="border-2 border-gray-500 rounded-md p-2">
+    <label for="">Telefono</label>
+    <input type="text" placeholder="9887664543" [(ngModel)]="chief.telefono" class="border-2 border-gray-500 rounded-md p-2">
+    <label for="">Correo</label>
+    <input type="text" placeholder="Ejemplo@gmail.com" [(ngModel)]="chief.correo" class="border-2 border-gray-500 rounded-md p-2">
+    <label for="">Años de experiencia</label>
+    <input type="number" placeholder="4" [(ngModel)]="chief.aniosexperiencia" class="border-2 border-gray-500 rounded-md p-2">
+    <label for="">Salario</label>
+    <input type="number" [(ngModel)]="chief.salario" class="border-2 border-gray-500 rounded-md p-2"><br>
+    <button class="h-12 border-2 rounded-md border-gray-500" (click)="mostrar()">{{editando ? "Actualizar Jefe":"Añadir Jefe"}}</button><br>
+</div>
